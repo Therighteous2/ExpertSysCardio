@@ -1,6 +1,7 @@
 import streamlit as st
 from ExpertMaladie import MaladieExpert, Symptome
 from PIL import Image
+import time
 
 # -------------------- APPLICATION PRINCIPALE --------------------
 
@@ -42,8 +43,26 @@ with st.form('form1'):
             rythmeCard = st.checkbox("**Le patient a des rythmes cardiaques anormales**")
             peauPale = st.checkbox("**Le patient a une peau pâle et froide**")
 
+    # méthode de l'outil de la barre de progression
+    progress_container = st.empty()
+    text_container = st.empty()
+    # Bouton
     btn_soumettre = st.form_submit_button("**DIAGNOSTIC**")
     if btn_soumettre:
+            my_bar = progress_container.progress(0) 
+            #text_container.text("Veuillez patienter...")
+
+              # 2. Simuler une opération longue pour la progression
+            for percent_complete in range(100):
+                   
+                time.sleep(0.03) # la barre fait unepetite pose puis reprend le défilement 
+                my_bar.progress(percent_complete + 1) # Mettre à jour la barre seule
+                text_container.text(f"Analyse des symptômes en cours, Veuillez patienter...{percent_complete + 1}%")
+
+              # Faire disparaître la barre de progression dès qu'elle atteint 100%
+            my_bar.empty() # cette ligne fait disparaître la barre de progression dès qu'elle atteint 100% 
+            text_container.empty()
+              # 
             sante = MaladieExpert()
             sante.reset()
             sante.declare(Symptome(

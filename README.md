@@ -11,15 +11,15 @@ Réduire les erreurs de diagnostic liées à la complexité des symptômes.
 
 Offrir une interface simple permettant aux utilisateurs d’entrer des données patients et d’obtenir un diagnostic.
 
-### 🧩 Fonctionnalités principales
+## 🧩 Fonctionnalités principales
 
-### 🧠 Moteur d’inférence basé sur des règles.
+🧠 Moteur d’inférence basé sur des règles.
 
-### 💾 Base de connaissances contenant les symptômes et pathologies cardiovasculaires (essouflement, problèmes de rythmes cardiaques, cardiopathie etc.).
+💾 Base de connaissances contenant les symptômes et pathologies cardiovasculaires (essouflement, problèmes de rythmes cardiaques, cardiopathie etc.).
 
-### 🧍 Saisie interactive des symptômes et facteurs de risque.
+🧍 Saisie interactive des symptômes et facteurs de risque.
 
-### 📊 Génération d’un rapport de diagnostic détaillant la probabilité des maladies suspectées.
+📊 Génération d’un rapport de diagnostic détaillant la probabilité des maladies suspectées.
 
 ## ⚙️ Architecture du système
 +-------------------------+
@@ -48,7 +48,7 @@ Offrir une interface simple permettant aux utilisateurs d’entrer des données 
 
 experta (pour la logique d’inférence en Python)
 
-### 🚀 Installation et exécution
+## 🚀 Installation et exécution
 1. Cloner le dépôt
 git clone https://github.com/Therighteous2/ExpertSysCardio.git
 cd ExpertSysCardio

@@ -10,7 +10,7 @@ class MaladieExpert(KnowledgeEngine):
         self.resultat=" "
     @Rule(Symptome(essouflement=True,fatigue=True,Arythmie=True,douleurThorax=True,evanouissement=True,fievre=True,gonflementArt=True,nausee=True,crampe=True,vomissement=True,vertige=False,sueur=False,angoisse = False,douleurArt=False, raideurMat=False,gonflementJambe=False,perteMob=False,craquement=False,souffle=False, oedeme=False,rythmeCard=False,peauPale=False))
     def Rhumatismale(self):
-        self.resultat="**Veuillez administrez de la pénicilline pour éraiquer l'infection streptococcique, utilisez de l'aspirine ou autres AINS pour réduire l'inflammation et gérer des complication cardiaques en utilisant des diurétiques, bêta-bloquants ou inhibiteurs de l'ECA pour traiter l'insuffisance cardiaque**"
+        self.resultat="**Veuillez administrez de la pénicilline pour éradiquer l'infection streptococcique, utilisez de l'aspirine ou autres AINS pour réduire l'inflammation et gérer des complication cardiaques en utilisant des diurétiques, bêta-bloquants ou inhibiteurs de l'ECA pour traiter l'insuffisance cardiaque**"
         st.error("**Le patient souffre de la Cardiopathie Rhumatismale**")
         
     @Rule(Symptome(essouflement=True,fatigue=False,Arythmie=False,douleurThorax=True,evanouissement=False,fievre=False,gonflementArt=False,nausee=True,crampe=False,vomissement=False,vertige=True,sueur=True,angoisse=True,faiblesse=True,douleurArt=False, raideurMat=False,gonflementJambe=False,perteMob=False,craquement=False, souffle=False, oedeme=False,rythmeCard=False,peauPale=False))
@@ -21,7 +21,7 @@ class MaladieExpert(KnowledgeEngine):
     def peripherique(self):
         self.resultat ="**1°. Utilisez des anti-inflammatoires non stéroïdiens(AINS) pour réduire la douleur et l'inflammation; 2°. Administrez des Corticostéroïdes par voie orale ou en injections intra-articulaires pour les pousés inflammatoire sévères. 3°. Faire de la thérapie physique et une rééducation**"
         st.error("**Le patient souffre de l'Arthropathie périphérique**")
-    @Rule(Symptome(essouflement=True,fatigue=True,Arythmie=False,douleurThorax=False,evanouissement=False,fievre=False,gonflementArt=False,nausee=False,crampe=False,vomissement=False,vertige=False,sueur=False,angoisse=False,faiblesse=False,douleurArt=False, raideurMat=False,gonflementJambe=False,perteMob=False,craquement=False, souffle=True, oedeme=True,rythmeCard=True,peauPale=True))
+    @Rule(Symptome(essouflement=True,fatigue=False,Arythmie=False,douleurThorax=False,evanouissement=False,fievre=False,gonflementArt=False,nausee=False,crampe=False,vomissement=False,vertige=False,sueur=False,angoisse=False,faiblesse=False,douleurArt=False, raideurMat=False,gonflementJambe=False,perteMob=False,craquement=False, souffle=False, oedeme=False,rythmeCard=False,peauPale=False))
     def Congenital(self):
         self.resultat ="**1°. Thérapie génique; 2°. Soins de soutien et réadaptation**"
         st.error("**Le patient souffre de la malformation congénitale**")
