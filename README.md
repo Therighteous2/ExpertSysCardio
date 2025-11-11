@@ -51,7 +51,6 @@ experta (pour la logique d’inférence en Python)
 ## 🚀 Installation et exécution
 1. Cloner le dépôt
 git clone https://github.com/Therighteous2/ExpertSysCardio.git
-cd ExpertSysCardio
 
 2. Installer les dépendances
 pip install -r requirements.txt
