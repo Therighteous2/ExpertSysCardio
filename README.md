@@ -51,12 +51,13 @@ experta (pour la logique d’inférence en Python)
 ## 🚀 Installation et exécution
 1. Cloner le dépôt
 git clone https://github.com/Therighteous2/ExpertSysCardio.git
+
 cd ExpertSysCardio
 
-2. Installer les dépendances
+3. Installer les dépendances
 pip install -r requirements.txt
 
-3. Lancer le système expert
+4. Lancer le système expert
 Streamlit run AppMaladie.py
 
 ## 🧪 Interface utilisateur
@@ -64,7 +65,8 @@ Streamlit run AppMaladie.py
 ![alt text](image.png)
 ![alt text](image-1.png)
 
-📚 Structure du projet
+## 📚 Structure du projet
+
 diagnostic-cardio-expert/
 │
 ├── AppMaladie.py         # Interface utilisateur 
