@@ -59,9 +59,10 @@ pip install -r requirements.txt
 3. Lancer le système expert
 Streamlit run AppMaladie.py
 
-🧪 Exemple d’utilisation
+## 🧪 Interface utilisateur
 
-→ Voir l'interface utilisateur 
+![alt text](image.png)
+![alt text](image-1.png)
 
 📚 Structure du projet
 diagnostic-cardio-expert/
@@ -79,3 +80,4 @@ Abel M. – Développeur principal
 
 ⚠️ Ce système expert est un outil d’aide à la décision, et ne remplace pas un avis médical professionnel.
 Les diagnostics proposés sont basés sur des règles médicales simplifiées.
+
